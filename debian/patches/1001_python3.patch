@@ -1,0 +1,23 @@
+Description: modernize test script
+Author: Jonas Smedegaard <dr@jones.dk>
+Forwarded: no
+Last-Update: 2023-11-30
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+--- a/test_jbig2dec.py
++++ b/test_jbig2dec.py
+@@ -1,4 +1,4 @@
+-#! /usr/bin/env python
++#!/usr/bin/python3
+ 
+ # this is the test script for jbig2dec
+ 
+@@ -160,7 +160,7 @@
+     instance = os.popen('./jbig2dec -q -o /dev/null --hash ' + self.file)
+     lines = instance.readlines()
+     exit_code = instance.close()
+-    self.failIf(exit_code, 'jbig2dec should exit normally')
++    self.assertFalse(exit_code, 'jbig2dec should exit normally')
+ 
+     # test here for correct hash
+     hash_pattern = re.compile('[0-9a-f]{%d}' % len(decode_hash))

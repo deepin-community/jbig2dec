@@ -1,0 +1,18 @@
+Description: avoid uninitialized allocator in command-line tool
+Origin: upstream, git://git.ghostscript.com/jbig2dec.git;a=commit;h=ee53a7e
+Author: Sebastian Rasmussen <sebras@gmail.com>
+Forwarded: yes
+Last-Update: 2023-11-30
+---
+This patch header follows DEP-3: https://dep.debian.net/deps/dep3/
+--- a/jbig2dec.c
++++ b/jbig2dec.c
+@@ -567,7 +567,7 @@
+ {
+     jbig2dec_params_t params;
+     jbig2dec_error_callback_state_t error_callback_state;
+-    jbig2dec_allocator_t allocator_;
++    jbig2dec_allocator_t allocator_ = { 0 };
+     jbig2dec_allocator_t *allocator = &allocator_;
+     Jbig2Ctx *ctx = NULL;
+     FILE *f = NULL, *f_page = NULL;

@@ -44,8 +44,7 @@ Files: config_win32.h
  memento.h
  os_types.h
  pbm2png.c
-Copyright: 2001-2020, Artifex Software, Inc.
-  2009-2018, Artifex Software, Inc.
+Copyright: 2001-2023, Artifex Software, Inc.
 License: UNKNOWN
  FIXME
 
@@ -58,12 +57,11 @@ Files: CHANGES
  debian/NEWS
  debian/compat
  debian/control
+ debian/copyright-check
  debian/gbp.conf
  debian/jbig2dec.install
  debian/libjbig2dec0.symbols
- debian/patches/020201107~d8294b2.patch
- debian/patches/020201127~f93f613.patch
- debian/patches/020210310~ade8a55.patch
+ debian/patches/020231105~ee53a7e.patch
  debian/patches/1004_extract_infile_from_autogen-sh.patch
  debian/patches/2001_disable_memento.patch
  debian/patches/2002_abi_compat.patch
@@ -71,6 +69,7 @@ Files: CHANGES
  debian/patches/series
  debian/rules
  debian/source/format
+ debian/source/lintian-overrides
  debian/tests/control
  debian/tests/run-unit-test
  debian/watch
@@ -84,17 +83,7 @@ License: UNKNOWN
  FIXME
 
 Files: COPYING
-Copyright: -like laws that apply to other kinds of
-  2007, Free Software Foundation, Inc. <http:fsf.org/>
-  <year> <name of author>
-  able work licensed under this
-  are not
-  disclaimer" for the program, if necessary.
-  ed material outside their relationship with you.
-  if you do
-  permission, other than the making of an
-  permission.
-  treaty adopted on 20 December 1996, or
+Copyright: 2007, Free Software Foundation, Inc. <http://fsf.org/>
 License: AGPL-3
  FIXME
 
@@ -113,22 +102,9 @@ Copyright: 1989-1994, 1996-1999, 2001, Free Software Foundation, Inc.
 License: LGPL-2.1+
  FIXME
 
-Files: debian/copyright-check
-Copyright: --deb-machine --ignore '^annex-h.jbig2|(debian/(changelog|copyright(_hints)?))$' --lines 0 -- * > debian/copyright_hints
-License: UNKNOWN
- FIXME
-
 Files: memento.c
-Copyright: 2009-2018, Artifex Software, Inc.
+Copyright: 2001-2023, Artifex Software, Inc.
   doNestedDisplay(c, depth+1);
-License: UNKNOWN
- FIXME
-
-Files: debian/source/lintian-overrides
-Copyright: GPL-3+
-  LGPL-2.1+
-  gpl-3+
-  lgpl-2.1+
 License: UNKNOWN
  FIXME
 

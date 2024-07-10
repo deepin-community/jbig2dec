@@ -1,3 +1,25 @@
+jbig2dec (0.20-1) unstable; urgency=medium
+
+  [ upstream ]
+  * new release
+
+  [ Jonas Smedegaard ]
+  * update git-buildpackage config:
+    + use DEP-14 git branches
+    + enable automatic DEP-14 branch name handling
+    + add usage config
+  * drop patches cherry-picked upstream, now obsolete
+  * add patch cherry-picked upstream
+    to avoid uninitialized allocator in command-line tool
+  * update copyright info: update coverage
+  * simplify build; stop build-depend on cdbs
+  * declare compliance with Debian Policy 4.6.2
+  * build-depend on debhelper-compat (not debhelper)
+  * add patch 1001 to modernize test script;
+    build-depend on python3
+
+ -- Jonas Smedegaard <dr@jones.dk>  Thu, 30 Nov 2023 14:40:40 +0100
+
 jbig2dec (0.19-3) unstable; urgency=medium
 
   * add patch cherry-picked upstream

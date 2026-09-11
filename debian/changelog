@@ -1,11 +1,8 @@
-jbig2dec (0.20-1deepin1) unstable; urgency=medium
+jbig2dec (0.20-1+deb13u1) trixie-security; urgency=medium
 
-  * fix(cve): CVE-2026-38076 (high) - Bug 709176: Validate SBSYMCODELEN
-    before use.   Upstream:
-    https://github.com/ArtifexSoftware/jbig2dec/commit/cc37d0931aa71582f
-    7128736a068c92cd8712d9b.patch
+  * CVE-2026-38076 (Closes: #1142282)
 
- -- deepin-ci-robot <packages@deepin.org>  Wed, 09 Sep 2026 15:10:12 +0800
+ -- Moritz Mühlenhoff <jmm@debian.org>  Sun, 30 Aug 2026 20:10:35 +0200
 
 jbig2dec (0.20-1) unstable; urgency=medium
 
